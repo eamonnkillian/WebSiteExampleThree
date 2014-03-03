@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--
+    Created originally on : 2-Mar-2014
+    Author      : Eamonn Killian
+    Web         : www.eamonnkillian.com
+    Contact     : eamonnkillian@gmail.com
+
+    The main html index file for the WebSiteExampleOne site. I created this site to 
+    showcase to a recruitment agency friend of mine how they could upgrade to a more
+    wizzy Jquery based environment. I thought I would share it out as an example for
+    others should they wish to utilise the style/approach ... 
+
+    Much praise and thanks to http://www.designchemical.com/lab/jquery-mega-drop-down-menu-plugin/download/
+    for a fantastic dropdown menu ... @designchemical on Twitter ...
+
+    I've included my key for the Google API call to the map .. Please register with 
+    Google here (https://support.google.com/maps/?hl=en#topic=3032023) to use your own
+    as mine will likely change over time ...
+
+    My thanks to SeizeDesign for the pictures that are from the free for any/commercial use - their site:
+    http://www.seizedesign.com/photography/25-inspiring-stock-photos-of-buildings-free-for-commercial-use/
+
+    Some additional pictures also from:
+    http://www.everystockphoto.com/
+    http://www.stockphotosforfree.com/
+-->
+
+<html>
+    <head>
+        <title>Web Site Example One</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Place your keywords in here"/>
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="css/style.css">  
+        <link type="text/css" rel="stylesheet" href="css/jquery-ui-1.10.4.custom.css">  
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/jquery.min.2-1-0.js"></script>
+        <script type="text/javascript" src="js/js_jqueryFile.js"></script>
+        <script type="text/javascript" src="js/coin-slider.min.js"></script>      
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="wholePage">
+                <div id="navigationMenu">
+                    <div id="navigationMenuInner">
+                        <ul id="nav">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="specialisms.html?spec=0">Candidates</a>
+                                <ul>
+                                    <li><a href="specialisms.html?spec=0">Specialism1</a></li>
+                                    <li><a href="specialisms.html?spec=1">Specialism2</a></li>
+                                    <li><a href="specialisms.html?spec=2">Specialism3</a></li>
+                                    <li><a href="specialisms.html?spec=3">Specialism4</a></li>
+                                    <li><a href="specialisms.html?spec=4">Specialism5</a></li>
+                                    <li><a href="specialisms.html?spec=5">Specialism6</a></li>                                
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a href="meet.html?mem=0">Meet the team</a>
+                                <ul>
+                                    <li><a href="meet.html?mem=0">Team Member1</a></li>
+                                    <li><a href="meet.html?mem=1">Team Member2</a></li>
+                                    <li><a href="meet.html?mem=2">Team Member3</a></li>
+                                    <li><a href="meet.html?mem=3">Team Member4</a></li>
+                                    <li><a href="meet.html?mem=4">Team Member5</a></li>
+                                    <li><a href="meet.html?mem=5">Team Member6</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+
+                                <ul>
+                                    <li><a href="#" onClick="parent.location = 'mailto:eamonnkillian@gmail.com?subject=Getting in touch...'">eMail</a></li>
+                                    <li><a href="contact.html">Directions</a></li>
+
+                                </ul>
+                            </li>
+                        </ul></code>
+                    </div>
+                </div>
+                <div id="topPortion">
+                    <div id="topBar">
+
+                    </div>
+                    <div id="logo">
+                        <div id="logoSpan1">//EJK</div>
+                        <div id="logoSpan2">Put your logo here</div>
+                    </div>
+                    <div id="floatingMenu"></div>
+                    <div id="coin-slider">
+                        <a href="#">
+                            <img src='img/city1.png' />
+                        </a>
+                        <a href="#">
+                            <img src='img/city2.png' />
+                        </a>
+                        <a href="#">
+                            <img src='img/city3.png' />
+                        </a>
+                        <a href="#">
+                            <img src='img/city4.png' />
+                        </a>
+                    </div>
+                </div>
+                <div id="splitLine"></div>
+                <div id="splitBanner">
+                    <table id="splitBannerTable">
+                        <tr>
+                            <td class="splitBannerTableTD1">Put Your Strapline Here</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div id="splitLine1"></div>
+                <div id="thirdSection">
+                    <div id="thirdSectionLHS">
+                        <div class="thirdSectionLHSMain"><img src="img/vector1.png" width="300" height="200"/></div>
+                        <div class="thirdSectionLHSReveal"><hr class="thirdSectionHR">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                    <div id="thirdSectionMID">
+                        <div class="thirdSectionMIDMain"><img src="img/vector2.png" width="300" height="200"/></div>
+                        <div class="thirdSectionMIDReveal"><hr class="thirdSectionHR">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                    <div id="thirdSectionRHS">
+                        <div class="thirdSectionRHSMain"><img src="img/vector3.png" width="300" height="200"/></div>
+                        <div class="thirdSectionRHSReveal"><hr class="thirdSectionHR">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                </div>
+                <div id="splitLine2"></div>
+                <div id="fourthSection">
+                    <div id="fourthSectionMID">
+                        <div id="tabs">
+                            <ul>
+                                <li><a href="#fragment-1"><span><strong>In Search of Excellence</strong></span></a></li>
+                                <li><a href="#fragment-2"><span><strong>In Search of Competition</strong></span></a></li>
+                                <li><a href="#fragment-3"><span><strong>In Search of Higgs</strong></span></a></li>
+                            </ul>
+                            <div id="fragment-1">
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                                    praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+                                    excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
+                                    officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem 
+                                    rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis 
+                                    est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere 
+                                    possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus 
+                                    autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet 
+                                    ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum 
+                                    rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+                                    alias consequatur aut perferendis doloribus asperiores repellat. 
+                                    <br>&nbsp;<br>
+                                    <i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                                        empor incididunt ut labore et dolore magna aliqua"</i></p>
+                            </div>
+                            <div id="fragment-2">
+                                <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium 
+                                    doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore 
+                                    veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim 
+                                    ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia 
+                                    consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque 
+                                    porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur 
+                                    adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, 
+                                    ut labore et dolore magnam aliquam quaerat voluptatem. 
+
+                                    <br>&nbsp;<br>
+                                    <i>"At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis 
+                                        praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias 
+                                        excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, 
+                                        qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum 
+                                        quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum 
+                                        soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod 
+                                        maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor 
+                                        repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum 
+                                        necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae 
+                                        non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut 
+                                        reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus 
+                                        asperiores repellat… "</i></p>
+                            </div>
+                            <div id="fragment-3"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                                    praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+                                    excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
+                                    officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem 
+                                    rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis 
+                                    est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere 
+                                    possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus 
+                                    autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet 
+                                    ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum 
+                                    rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+                                    alias consequatur aut perferendis doloribus asperiores repellat. 
+                                    <br>&nbsp;<br>
+                                    <i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                                        empor incididunt ut labore et dolore magna aliqua"</i></p></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="splitLine3"></div>
+                <div id="fifthSection">
+                    <div id="fifthSectionMID"><h3>Sub-Section #1</h3>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+                        excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
+                        officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem 
+                        rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis 
+                        est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere 
+                        possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+
+                        <p><h3>Sub-Section #2</h3>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                            praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+                            excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
+                            officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem 
+                            rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis 
+                            est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere 
+                            possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus 
+                            autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet 
+                            ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum 
+                            rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+                            alias consequatur aut perferendis doloribus asperiores repellat. 
+                        </p>
+                        <p><h3>Sub-Section #3</h3>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                            praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+                            excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
+                            officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem 
+                            rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis 
+                            est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere 
+                            possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+                        </p>
+                        <p><h3>Sub-Section #4</h3>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                            praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+                            excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
+                            officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem 
+                            rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis 
+                            est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere 
+                            possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+                        </p>
+                    </div>
+                </div>
+                <div id="splitLine4"></div>
+                <div id="sixthSection">
+                    <div id="sixthSectionLHS">
+                        <div id="sixthSectionLHSMain">
+                            <h1>About Us</h1>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+                                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim 
+                                ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            </p><p>
+                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+                                adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
+                                dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis 
+                                nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid 
+                                ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea 
+                                voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem 
+                                eum fugiat quo voluptas nulla pariatur?
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id="sixthSectionMID">
+                        <div id="sixthSectionMIDMain">
+                            <h1>Social</h1>
+                            <table id="sixthSectionTable">
+                                <tr><td><a href="#" title="Tweet About Use" class="data-icon">&#62217;</a></td><td class="sixthSectionTD2">Twitter</td></tr>
+                                <tr><td><a href="#" title="Tweet About Use" class="data-icon">&#62222;</a></td><td class="sixthSectionTD2">Facebook</td></tr>
+                                <tr><td><a href="#" title="Tweet About Use" class="data-icon">&#62232;</a></td><td class="sixthSectionTD2">LinkedIn</td></tr>
+                                <tr><td><a href="#" title="Tweet About Use" class="data-icon">&#62223;</a></td><td class="sixthSectionTD2">Google+</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="sixthSectionRHS">
+                        <div id="sixthSectionRHSMain">
+                            <h1>Contact Us</h1>
+                            <p>Telephone: <strong>+44 207 222 2222</strong></p>
+                            <p>Fax: <strong>+44 207 333 3333</strong></p>
+                            <p>eMail: <strong>demo@demo.com</strong></p>
+                        </div>
+                        
+                    </div>
+                    <div id="splitLine5"></div>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>

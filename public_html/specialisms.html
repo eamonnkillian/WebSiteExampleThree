@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--
+    Created originally on : 2-Mar-2014
+    Author      : Eamonn Killian
+    Web         : www.eamonnkillian.com
+    Contact     : eamonnkillian@gmail.com
+
+    The main html index file for the WebSiteExampleOne site. I created this site to 
+    showcase to a recruitment agency friend of mine how they could upgrade to a more
+    wizzy Jquery based environment. I thought I would share it out as an example for
+    others should they wish to utilise the style/approach ... 
+
+    Much praise and thanks to http://www.designchemical.com/lab/jquery-mega-drop-down-menu-plugin/download/
+    for a fantastic dropdown menu ... @designchemical on Twitter ...
+
+    I've included my key for the Google API call to the map .. Please register with 
+    Google here (https://support.google.com/maps/?hl=en#topic=3032023) to use your own
+    as mine will likely change over time ...
+
+    My thanks to SeizeDesign for the pictures that are from the free for any/commercial use - their site:
+    http://www.seizedesign.com/photography/25-inspiring-stock-photos-of-buildings-free-for-commercial-use/
+-->
+
+<html>
+    <head>
+        <title>Web Site Example One</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Place your keywords in here"/>
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="css/specStyle.css">  
+        <link type="text/css" rel="stylesheet" href="css/jQuerySpec.css">  
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/jquery.min.2-1-0.js"></script>
+        <script type="text/javascript" src="js/js_jqueryFile.js"></script>
+        <script type="text/javascript" src="js/coin-slider.min.js"></script>      
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script type="text/javascript" src="js/goToSpecialism.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="wholePage">
+                <div id="navigationMenu">
+                    <div id="navigationMenuInner">
+                        <ul id="nav">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="specialisms.html?spec=0">Candidates</a>
+                                <ul>
+                                    <li><a href="specialisms.html?spec=0">Specialism1</a></li>
+                                    <li><a href="specialisms.html?spec=1">Specialism2</a></li>
+                                    <li><a href="specialisms.html?spec=2">Specialism3</a></li>
+                                    <li><a href="specialisms.html?spec=3">Specialism4</a></li>
+                                    <li><a href="specialisms.html?spec=4">Specialism5</a></li>
+                                    <li><a href="specialisms.html?spec=5">Specialism6</a></li>                                
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a href="meet.html?mem=0">Meet the team</a>
+                                <ul>
+                                    <li><a href="meet.html?mem=0">Team Member1</a></li>
+                                    <li><a href="meet.html?mem=1">Team Member2</a></li>
+                                    <li><a href="meet.html?mem=2">Team Member3</a></li>
+                                    <li><a href="meet.html?mem=3">Team Member4</a></li>
+                                    <li><a href="meet.html?mem=4">Team Member5</a></li>
+                                    <li><a href="meet.html?mem=5">Team Member6</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+
+                                <ul>
+                                    <li><a href="#" onClick="parent.location = 'mailto:eamonnkillian@gmail.com?subject=Getting in touch...'">eMail</a></li>
+                                    <li><a href="contact.html">Directions</a></li>
+
+                                </ul>
+                            </li>
+                        </ul></code>
+                    </div>
+                </div>
+                <div id="topPortion">
+                    <div id="topBar">
+
+                    </div>
+                    <div id="logo">
+                        <div id="logoSpan1">//EJK</div>
+                        <div id="logoSpan2">Put your logo here</div>
+                    </div>
+                    <div id="floatingMenu"></div>
+                    <div id="coin-slider">
+                        <a href="#">
+                            <img src='img/cand1.png' />
+                        </a>
+                        <a href="#">
+                            <img src='img/cand2.png' />
+                        </a>
+                        <a href="#">
+                            <img src='img/cand3.png' />
+                        </a>
+                        <a href="#">
+                            <img src='img/cand4.png' />
+                        </a>
+                    </div>
+                </div>
+                <div id="splitLine"></div>
+                <div id="splitBanner">
+                    <table id="splitBannerTable">
+                        <tr>
+                            <td class="splitBannerTableTD1">Examine Our Specialisms</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div id="splitLine1"></div>
+
+
+                <div id="thirdSection">
+                    <div id="accordion">
+
+                        <h3>Specialism#1</h3>
+                        <div>
+                            <p>
+                                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                            </p>
+                        </div>
+                        <h3>Specialism#2</h3>
+                        <div>
+                            <p>
+                                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                                purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                                velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                                suscipit faucibus urna.
+                            </p>
+                        </div>
+                        <h3>Specialism#3</h3>
+                        <div>
+                            <p>
+                                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                            </p>
+                        </div>
+                        <h3>Specialism#4</h3>
+                        <div>
+                            <p>
+                                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                                mauris vel est.
+                            </p>
+                            <p>
+                                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                inceptos himenaeos.
+                            </p>
+                        </div>
+                        <h3>Specialism#5</h3>
+                        <div>
+                            <p>
+                                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                            </p>
+                        </div>
+                        <h3>Specialism#6</h3>
+                        <div>
+                            <p>
+                                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
+                <div id="splitLine4"></div>
+                <div id="sixthSection">
+                    <div id="sixthSectionLHS">
+                        <div id="sixthSectionLHSMain">
+                            <h1>About Us</h1>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+                                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim 
+                                ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            </p><p>
+                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+                                adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
+                                dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis 
+                                nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid 
+                                ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea 
+                                voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem 
+                                eum fugiat quo voluptas nulla pariatur?
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id="sixthSectionMID">
+                        <div id="sixthSectionMIDMain">
+                            <h1>Social</h1>
+                            <table id="sixthSectionTable">
+                                <tr><td><a href="#" title="Tweet About Use" class="data-icon">&#62217;</a></td><td class="sixthSectionTD2">Twitter</td></tr>
+                                <tr><td><a href="#" title="Tweet About Use" class="data-icon">&#62222;</a></td><td class="sixthSectionTD2">Facebook</td></tr>
+                                <tr><td><a href="#" title="Tweet About Use" class="data-icon">&#62232;</a></td><td class="sixthSectionTD2">LinkedIn</td></tr>
+                                <tr><td><a href="#" title="Tweet About Use" class="data-icon">&#62223;</a></td><td class="sixthSectionTD2">Google+</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="sixthSectionRHS">
+                        <div id="sixthSectionRHSMain">
+                            <h1>Contact Us</h1>
+                            <p>Telephone: <strong>+44 207 222 2222</strong></p>
+                            <p>Fax: <strong>+44 207 333 3333</strong></p>
+                            <p>eMail: <strong>demo@demo.com</strong></p>
+                        </div>
+
+                    </div>
+                    <div id="splitLine5"></div>
+                </div>
+            </div>
+        </div> 
+        
+    </body>
+</html>

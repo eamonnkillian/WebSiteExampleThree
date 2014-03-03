@@ -1,0 +1,489 @@
+@import "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800";
+@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700";
+
+/* 
+    Created originally on : 02-Mar-2014
+    Author      : Eamonn Killian
+    Web         : www.eamonnkillian.com
+    Contact     : eamonnkillian@gmail.com
+
+    The css file for the WebSiteExampleOne site.
+
+Thanks to Daniel Bruce (www.entypo.com) for lovely icons licensed under 
+CC BY-SA 3.0 and the font under SIL Open Font License.
+    
+*/
+
+body {
+    background-color:#fff;
+    background-position:initial initial;
+    background-repeat:initial initial;
+    font-family:'Open Sans', Arial, sans-serif;
+}
+
+#container {
+    width: 1200px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#wholePage {
+    width: 1200px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+h1, h2, h3 {
+    font-family:"Open Sans Condensed", Arial, sans-serif;
+}
+
+.inside {
+    margin:0 auto;
+    width:960px;
+}
+
+#topPortion {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#topBar {
+    width: 1200px;
+    height: 100px;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 99;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100px;
+    width: 200px;
+    background-color: #A035CB;
+    opacity: 1;
+    z-index: 100;
+}
+
+#logoSpan1 {
+    font-family:'Open Sans', Arial, sans-serif;
+    font-size: 25px;
+    background-color: #A035CB;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    width: 200px;
+    height:40px;
+    position: relative;
+    float: left;
+}
+
+#logoSpan2 {
+    font-family:'Open Sans', Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    width: 200px;
+    height:50px;
+    position: relative;
+    float: left;
+}
+
+#navigationMenu {
+    position: relative;
+    display: block;
+    float: right;
+    top: 15px;
+    width: 1200px;
+    opacity: 1;
+    z-index: 101;    
+}
+
+#navigationMenuInner {
+    position: relative;
+    float: right;
+    opacity: 1;
+    z-index: 101;    
+}
+
+#splitLine {
+    position: absolute;
+    top: 400px;
+    left: 0px;
+    background-color: #fff;
+    width: 1200px;
+    height: 3px;
+}
+
+#splitBanner {
+    position: absolute;
+    top: 403px;
+    left: 0;
+    background-color: #A035CB;
+    height: 100px;
+    width: 1200px;
+}
+
+#splitBannerTable {
+    font-family:"Open Sans Condensed", Arial, sans-serif;
+    vertical-align: middle;
+    height: 100px;
+    width: 100%;
+}
+
+.splitBannerTableTD1 {
+    font-family:"Open Sans Condensed", Arial, sans-serif;
+    font-size: 40px;
+    color: #fff;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+.splitBannerTableTD2 {
+    font-family:"Open Sans Condensed", Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    vertical-align: middle;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.splitBannerTableButton {
+    display: inline-block;
+    white-space: nowrap;
+    background-color: #bbb;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
+    border: 1px solid #777;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0.5em;
+    font-family:"Open Sans", Arial, sans-serif;
+    text-decoration: none;
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    border-radius: .2em;
+    box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+}
+
+.splitBannerTableButton:hover {
+    background-color: #eee;        
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');        
+}
+
+#splitLine1 {
+    position: absolute;
+    top: 503px;
+    left: 0px;
+    background-color: #fff;
+    width: 1200px;
+    height: 3px;
+}
+
+#thirdSection {
+    position: absolute;
+    top: 506px;
+    left: 0px;
+    height: 500px;
+    width: 1200px;
+    padding-top: 20px;
+    padding-left: 50px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#splitLine4 {
+    position: absolute;
+    top: 1006px;
+    left: 0px;
+    background-color: #fff;
+    width: 1200px;
+    height: 3px;
+    z-index: 100;
+}
+
+
+#sixthSection {
+    position: absolute;
+    top: 1009px;
+    left: 0;
+    height: 750px;
+    width: 1200px;
+    background-color: #373737;
+}
+
+#sixthSectionLHS {
+    position: absolute;
+    top: 25px;
+    width: 490px;
+    height: 700px;
+    background-color: #373737;
+}
+
+#sixthSectionLHSMain {
+    padding: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+
+#sixthSectionMID {
+    position: absolute;
+    top: 25px;
+    left: 500px;
+    width: 340px;
+    height: 700px;
+    background-color: #373737;
+}
+
+#sixthSectionMIDMain {
+    padding: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+
+#sixthSectionMIDMain a{
+    text-decoration: none;
+}
+
+#sixthSectionMIDMain a:hover{
+    text-decoration: none;
+    background-color: #000;
+}
+
+.sixthSectionTD2 {
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+#sixthSectionRHS {
+    position: absolute;
+    top:25px;
+    left: 850px;
+    width: 340px;
+    height: 700px;
+    background-color: #373737;
+}
+
+#sixthSectionRHSMain {
+    padding: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+
+#splitLine5 {
+    position: absolute;
+    top: 700px;
+    left: 50px;
+    background-color: #fff;
+    width: 1100px;
+    height: 3px;
+    z-index: 1000;
+}
+
+@font-face {
+    font-family: 'Entypo-Social';
+    src: url('../font/entypo-social.eot');
+    src: local('☺'), 
+        url('../font/entypo-social.woff') format('woff'), 
+        url('../font/entypo-social.ttf') format('truetype'),
+        url('../font/entypo-social.svg#webfontIyfZbseF') format('svg');
+}
+
+.data-icon {
+    font-family: 'Entypo-Social';
+    content: attr(data-icon);
+    font-size: 100px;
+    color: white;
+    background: none;
+}
+
+/*
+        Coin Slider jQuery plugin CSS styles
+        http://workshop.rs/projects/coin-slider
+*/
+
+
+.coin-slider { overflow: hidden; zoom: 1; position: relative; }
+.coin-slider a{ text-decoration: none; outline: none; border: none; }
+
+.cs-buttons { font-size: 0px; padding: 10px; float: left; }
+.cs-buttons a { margin-left: 5px; height: 10px; width: 10px; float: left; border: 1px solid #B8C4CF; color: #B8C4CF; text-indent: -1000px; }
+.cs-active { background-color: #B8C4CF; color: #FFFFFF; }
+
+.cs-title { width: 545px; padding: 10px; background-color: #000000; color: #FFFFFF; }
+
+.cs-prev, 
+.cs-next { background-color: #000000; color: #FFFFFF; padding: 0px 10px; }
+
+/* 
+
+    A fantastic dropdown menu in pure CSS/HTML5 .. Thank you Harry @csswizardry
+    http://csswizardry.com/2011/02/creating-a-pure-css-dropdown-menu/
+
+*/
+
+#nav{
+    list-style:none;
+    font-weight:bold;
+    margin-bottom:10px;
+    float:left;
+    width:100%;
+    position:relative;
+    z-index:101;
+}
+#nav li{
+    float:left;
+    margin-right:10px;
+    position:relative;
+}
+#nav a{
+    display:block;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:25px;
+    padding-right:25px;
+    color:#fff;
+    background:#A035CB;
+    text-decoration:none;
+}
+#nav a:hover{
+    color:#fff;
+    background:#000;
+    text-decoration:underline;
+}
+
+#nav ul{
+    background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+    background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+    list-style:none;
+    position:absolute;
+    left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+#nav ul li{
+    padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+    float:none;
+}
+#nav ul a{
+    white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+    left:-40px; /* Bring back on-screen when needed */
+}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+    background:#000;
+    text-decoration:underline;
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration:none;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    background: #A035CB;
+}
+
+
+/* 
+/ This next compartment will contain the Contact Us styles for contact.html
+/ I'm going to use this file as well to keep it simple and in one place.
+/
+*/
+
+#contactBackground {
+    width: 1150px;
+    height: 700px;
+    background-color: #f39c12;
+    text-align: right;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#contactBackground1 {
+    width: 1150px;
+    height: 700px;
+    background-color: #34495E;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+#contactBuffer {
+    width:665px;
+    height: 100px;
+}
+
+#contactTableBuffer {
+    width:200px;
+    height: 515px;
+    float: left;
+}
+
+#contactTable {
+    width: 150px;
+    vertical-align: center;
+    font-family:'Open Sans Condensed', Arial, sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding: 5px;
+}
+
+#googlemap {
+    z-index: -1000;
+}
+
+.contact-button {
+    display: inline-block; 
+    font-size: 12px; 
+    text-decoration: none!important; 
+    font-family: Helvetica, Arial, sans serif;
+    padding: 8px 12px; 
+    border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    box-shadow: inset 0px 0px 2px #fff;
+    -o-box-shadow: inset 0px 0px 2px #fff;
+    -webkit-box-shadow: inset 0px 0px 2px #fff;
+    -moz-box-shadow: inset 0px 0px 2px #fff;
+}
+
+.contact-button:hover {
+    border: 1px solid #b0b0b0;
+    background-image: -moz-linear-gradient(#e1e1e1, #ededed);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ededed), to(#e1e1e1));
+    background-image: -webkit-linear-gradient(#e1e1e1, #ededed);
+    background-image: -o-linear-gradient(#e1e1e1, #ededed);
+    background-color: #ededed;
+}
