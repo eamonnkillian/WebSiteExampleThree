@@ -1,5 +1,5 @@
-WebSiteExampleTwo
-=================
+WebSiteExampleThree
+===================
 
 A not-so-simple website built in HTML5, CSS and a little bit of JQuery as an example of what can be achieved. 
 I created this site to showcase for a friend of mine how HTML5, CSS and JQuery are making the web and 
